@@ -1,0 +1,466 @@
+/* Core styles */
+:root {
+    --background-color: #030f1b;
+    --secondary-background-color: #07233e;
+    --third-level-background-color: #103253;
+    --primary-color: #ff5c00;
+    --secondary-color: #fff;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #030f1b;
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+hr {
+    border: 2px solid var(--primary-color);
+    margin-bottom: 0;
+}
+
+/* Header section */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#header .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* navbar part */
+#navbar>ul>li {
+    display: inline-block;
+    padding: 0.225rem;
+}
+
+#navbar>ul>li:last-of-type {
+    margin-right: 2rem;
+}
+
+#navbar>ul>li>a {
+    width: 8rem;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    background: linear-gradient(to top, var(--primary-color) 38%, var(--primary-color), rgb(255, 255, 0) 2%, var(--primary-color));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 3px solid;
+    border-color: -moz-linear-gradient(top, #555555, #111111);
+    padding: 0.625rem;
+    border-radius: 25px;
+    float: right;
+}
+
+#navbar>ul>li>a:hover {
+    cursor: pointer;
+    border-color: var(--primary-color);
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* End Header section */
+
+/* Welcome section */
+#welcome-section {
+    height: 100vh;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+#welcome-section h1 {
+    color: var(--primary-color);
+    font-size: 6rem;
+}
+
+#welcome-section p {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin: -1rem 6rem 3rem 6rem;
+}
+
+#welcome-section .button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#welcome-section .button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* End Welcome section */
+
+/* Projects section */
+#projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+#projects h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: var(--primary-color);
+}
+
+.project-tile {
+    box-sizing: border-box;
+    width: 30%;
+    background-color: var(--secondary-background-color);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    vertical-align: center;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.project-tile h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.project-tile p {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.project-tile:hover {
+    background-color: var(--third-level-background-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-tile:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+#projects .button {
+    width: 100%;
+    text-align: center;
+}
+
+#projects .button a {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#projects .button a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* End Projects section */
+
+/* Contact section */
+#contact-section {
+    height: 75vh;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+#contact-section h1 {
+    color: var(--primary-color);
+    font-size: 4.5rem;
+}
+
+#contact-section p {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    font-style: italic;
+    margin: -3rem 6rem 3rem 6rem;
+}
+
+.social-media-item {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 36px;
+    color: #05364d;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.social-media-item.active {
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+}
+
+.social-media-item.active i {
+    color: #ffffff;
+}
+
+.social-media-item:hover {
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+}
+
+.social-media-item:hover i {
+    color: #ffffff;
+}
+
+.social-media-item a {
+    color: #021017;
+}
+
+/* End Contact section */
+
+/* Footer section */
+footer {
+    height: 15vh;
+    margin-top: -1rem;
+}
+
+footer p {
+    padding: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* End Footer section */
+
+/* Responsive styles */
+@media only screen and (max-width: 991px) {
+
+    #welcome-section h1 {
+        font-size: 4.5rem;
+    }
+
+    #welcome-section p {
+        font-size: 1.6rem;
+        margin: -1rem 6rem 3rem 6rem;
+    }
+
+    #welcome-section .button {
+        font-size: 1.1rem;
+        padding: 0.75rem 2.25rem;
+    }
+
+    #projects h1 {
+        font-size: 2.25rem;
+        padding-top: 2rem;
+    }
+
+    .project-tile {
+        width: 45%;
+    }
+
+    #projects .button a {
+        font-size: 1.1rem;
+        padding: 0.75rem 2.25rem;
+    }
+
+    #contact-section h1 {
+        font-size: 3.5rem;
+    }
+
+    #contact-section p {
+        font-size: 1.5rem;
+        margin: -1rem 5rem 3rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    hr{
+        border: 2px solid var(--primary-color);
+    }
+
+    #navbar>ul>li>a {
+        font-size: 1.125rem;
+        padding: 0.5rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 3.5rem;
+    }
+
+    #welcome-section p {
+        font-size: 1.2rem;
+        margin: 1rem 6rem;
+    }
+
+    #welcome-section .button {
+        font-size: 1rem;
+        margin: 3rem 6rem;
+        padding: 0.5rem 2rem;
+    }
+
+    #projects h1 {
+        font-size: 1.75rem;
+    }
+
+    .project-tile h3 {
+        font-size: 1.125rem;
+    }
+
+    .project-tile p {
+        font-size: 1rem;
+        padding: -1rem 1rem 1rem 1rem;
+    }
+
+    .project-tile img {
+        max-height: 180px;
+    }
+
+    #contact-section h1 {
+        font-size: 2.5rem;
+    }
+
+    #contact-section p {
+        font-size: 1.2rem;
+    }
+
+    .social-media-item {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 0.9rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    #navbar>ul>li>a {
+        width: 4.5rem;
+        font-size: 0.8rem;
+        padding: 0.25 0.5rem;
+        border: 2px solid;
+    }
+
+    #navbar>ul>li:last-of-type {
+        margin-right: 1rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    #welcome-section p {
+        font-size: 0.925rem;
+        margin: 1rem 4rem;
+    }
+
+    #welcome-section .button {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #projects h1 {
+        font-size: 1.75rem;
+    }
+
+    .project-tile {
+        width: 100%;
+        border-radius: 0.5rem 1rem;
+    }
+
+    .project-tile h3 {
+        font-size: 1.75rem;
+    }
+
+    .project-tile p {
+        font-size: 1.25rem;
+        padding: 0.5rem 2rem 2rem 2rem;
+    }
+
+    .image-container {
+        border-radius: 1rem;
+    }
+
+    .project-tile img {
+        max-height: fit-content;
+    }
+
+    #contact-section h1 {
+        font-size: 2rem;
+    }
+
+    #contact-section p {
+        font-size: 1rem;
+    }
+
+    .social-media-item {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 0.8rem;
+        margin-right: 0.2rem;
+    }
+
+    footer {
+        height: 10vh;
+        margin-top: -1rem;
+    }
+
+    footer p {
+        padding: 2rem;
+        font-size: 0.75rem;
+    }
+}
