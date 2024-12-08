@@ -54,6 +54,10 @@ This is a responsive **Personal Portfolio Webpage** created as part of the **Res
 
 ## 📷 Preview
 
+🎥 [Watch the Demo Video]
+https://github.com/user-attachments/assets/a8fc9a6d-0edd-4d0d-95fc-c38be57c7a90
+
+🖼️ **Screenshots**
 ![Screenshot_1](https://github.com/user-attachments/assets/13b2d6f4-f76f-4635-98cb-08e1bda06d44)
 ![Screenshot_2](https://github.com/user-attachments/assets/30b05587-2dd4-43c0-93ae-a13f52e6c739)
 ![Screenshot_3](https://github.com/user-attachments/assets/6cf48c76-9fef-4a3c-9eb2-61f4299ac3ef)
